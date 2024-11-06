@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  background-image: url(./src/assets/Images/image-abstract-black-white-waves.jpg);
+  object-fit: cover;
+  background-repeat: no-repeat; /* Não repete a imagem */
+  background-size: cover; /* Use 'cover' ou 'contain' */
+}
+
+.screen-content {
+  display: flex;
+  column-gap: 50px;
+  margin: 0 auto;
+  max-width: 600px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  width: 600px;
+  padding: 80px 50px;
+}
+
+.signup-content-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  row-gap: 30px;
+}
+
+.progress-bar-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.line {
+  border: 1px solid black;
+  height: 1px;
+  width: 20%;
+}
+
+.circle-background-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 80px;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
+.circle-background-icon.active {
+  background-color: #000;
+}
+
+.circle-background-icon img {
+  width: auto;
+  height: 50px;
+}
+
+.top-content-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  row-gap: 20px;
+}
+
+.top-content-area .title {
+  font-size: 32px;
+  font-weight: 800;
+  font-family: "Raleway", sans-serif;
+}
+
+.top-content-area .subtitle {
+  font-size: 17px;
+  font-weight: 400;
+  color: #ABABAB;
+}
+
+.content-tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.line-content-tab {
+  border: 1px solid #D0D0D0;
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  width: 100%;
+}
+
+.input-area {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+label {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+input {
+  padding: 10px 25px;
+  border: 1px solid #D0D0D0;
+  outline: none;
+}
+
+input::placeholder {
+  font-size: 14px;
+  font-weight: 500;
+  color: #ABABAB;
+}
+
+.line-input-area {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+
+.line-input-area .input-area {
+  width: 100%;
+}
+
+.button-form {
+  padding: 10px;
+  background-color: #000;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+}
+
+.button-form:hover {
+  background-color: #252525;
+  transform: 2.5s ease;
+}
+
+.login-area {
+  display: flex;
+  column-gap: 8px;
+  justify-content: center;
+  width: 100%;
+}
+
+.login-area span {
+  font-size: 17px;
+  font-weight: 400;
+  color: #ABABAB;
+}
+
+.login-area a {
+  font-size: 17px;
+  font-weight: 700;
+  color: #000000;
+  text-decoration: none;
+}
+
+a{
+  text-decoration: none;
+  color: #fff;
+}
