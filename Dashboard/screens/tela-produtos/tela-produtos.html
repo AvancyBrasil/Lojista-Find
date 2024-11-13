@@ -64,7 +64,7 @@
                 </a>
             </li>
             <li>
-                <a id="logout" href="../tela-conquistas/tela-conquistas.html">
+                <a href="../tela-conquistas/tela-conquistas.html">
                     <span class="material-symbols-outlined">trophy</span>
                     Conquistas
                 </a>
@@ -116,19 +116,17 @@
                 <li><a href="" class="active">Produto</a></li>
             </ul>
 
+    <div class="main-container">
             <div class="container">
                 <div class="profile-section">
-                    <div class="profile-pic">
-                        <img src="/Dashboard/images/profile.jpg" alt="Profile Picture">
+                    <h2>Novo Produto</h2>
+                    <div class="profile-pic" id="profile-pic">
+                        <img src="/Dashboard/images/profile.jpg" alt="Profile Picture" id="profile-img">
                     </div>
+                    <div class="input-container"></div>
+              
+
                     <div class="address-section">
-                        <h2>Novo Produto</h2>
-
-                        <div class="input-group">
-                            <label for="imagemProduto">Imagem do produto</label>
-                            <input type="file" id="imagemProduto" accept="image/*">
-                        </div>
-
                         <div class="input-group">
                             <label for="nomeProduto">Nome do produto</label>
                             <input type="text" id="nomeProduto" placeholder="Insira o nome do Produto">
@@ -136,13 +134,33 @@
 
                         <div class="input-group">
                             <label for="preco">Preço</label>
-                            <input step="0.01" min="0" type="number" id="preco" placeholder="Insira o Preço do Produto">
+                            <input step="0.01" min="0" type="text" id="preco" placeholder="Insira o Preço do Produto">
                         </div>
 
-                        <div class="input-group">
-                            <label for="descricao">Descrição</label>
-                            <input type="text" id="descricao" placeholder="Insira a Descrição do Produto">
-                        </div>
+                            <div class="input-group">
+                                <label for="descricao">Descrição</label>
+                                <input type="text" id="descricao" placeholder="Insira a Descrição do Produto">
+                            </div>
+
+                            <div class="input-group">
+                                
+                                <label for="categoria">Categoria</label>
+                                <select id="categoria">
+                                    <option value="Doces e Salgados">Doces e Salgados</option>
+                                    <option value="Roupas">Roupas</option>
+                                    <option value="Farmácia">Farmácia</option>
+                                    <option value="Casa">Casa</option>
+                                    <option value="Livros">Livros</option>
+                                    <option value="Jogos">Jogos</option>
+                                    <option value="Brinquedo">Brinquedo</option>
+                                    <option value="Esporte">Esporte</option>
+                                    <option value="Techs">Techs</option>
+                                    <option value="Veículos">Veículos</option>
+                                    <option value="Plantas">Plantas</option>
+                                    <option value="Pets">Pets</option>
+                                </select>
+                                
+                            </div>
 
                         <button id="edit-btn">Adicionar Produto</button>
 
@@ -152,6 +170,41 @@
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div class="card-container">
+                <div class="card-screen">
+                  <div class="header">
+                    <img class="logo" src="../../images/logo.png" alt="Logo">
+                  </div>
+                  <div class="product-grid" id="productGrid">
+                  </div>
+                </div>
+              </div> 
+              <div id="modalEditProduto" class="modal">
+                <div class="modal-content">
+                  <span id="closeModal" class="close">&times;</span>
+                  <h2>Editar Produto</h2>
+                  <div id="imagemProdutoModal" class="imagemProdutoModal">
+                    <img id="imagemProdutoExibida" src="" alt="Imagem do Produto">
+                  </div>
+                  <form id="editForm">
+                    <label for="1nomeProduto">Nome:</label>
+                    <input type="text" id="1nomeProduto" name="1nomeProduto">
+                    
+                    <label for="1descricaoProduto">Descrição:</label>
+                    <input type="text" id="1descricaoProduto" name="1descricaoProduto">
+                    
+                    <label for="1precoProduto">Preço:</label>
+                    <input type="number" id="1precoProduto" name="1precoProduto">
+                    
+                    <label for="1imagemProduto">Imagem:</label>
+                    <input type="text" id="1imagemProduto" name="1imagemProduto">
+                    
+                    <button type="submit">Salvar</button>
+                  </form>
+                </div>
+              </div>          
             </div>
         </main>
     </section>

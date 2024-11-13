@@ -1,8 +1,12 @@
 
-
-
+.main-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  
 .container {
-    max-width: 50%;
+    width: 600px;
     background-color: #fff;
     padding: 20px;
     margin-top: 36px;
@@ -52,7 +56,7 @@
     flex-direction: column;
     row-gap: 30px;
     flex-grow: 1;
-    
+   
 }
 
 
@@ -60,6 +64,7 @@
     display: flex;
     flex-direction: column;
     gap: 5px;
+   
     
   }
   
@@ -81,6 +86,7 @@
   }
 
 .address-section {
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     row-gap: 30px;
@@ -111,4 +117,237 @@
     cursor: pointer;
     background-color: var(--main-color);
     color: var(--white-color);
+}
+
+.profile-section h2{
+    margin-left: 60px;
+}
+
+.imagem_up
+{
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+
+/* Tela de celular"*/
+/* Container principal do telefone */
+.card-container {
+    margin-left: 15%;
+    margin-top: 36px;
+    width: 620px;
+    height: 750px;
+    border-radius: 36px;
+    padding: 10px;
+    background-color: #050521;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card-screen {
+    width: 100%;
+    height: 100%;
+    background-color: #050521;
+    border-radius: 24px;
+    overflow: auto;
+    color: #fff;
+    font-family: Arial, sans-serif;
+  }
+  
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #050521;
+    color: #ffa500;
+  }
+  
+  .logo {
+    width: 60px;
+  }
+  
+ 
+  .greeting {
+    margin-top: 13px;
+    font-size: 18px;
+    padding: 10px 15px;
+    color: #fff;
+    font-style: oblique
+  }
+  
+  /* Categorias */
+  .categories {
+    display: flex;
+    gap: 8px;
+    padding: 10px;
+    overflow-x: auto;
+     
+  }
+  
+  .category-button {
+    display: flex;
+    background-color: #333;
+    border: none;
+    height: 50px;
+    width: 110px;
+    padding: 8px 12px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 14px;
+    white-space: wrap;
+    word-wrap:  normal;
+    text-align: center;
+   
+  }
+  .category-button ul{
+    margin-top: 10px;
+    font-style: Courier, monospace;
+    word-break: normal;
+    flex-wrap: nowrap;
+    width: 10em;
+  }
+  .category-button .brigadeiro{
+   margin-top: 2px;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr  ;
+    gap: 15px;
+    padding: 10px;
+    margin-left: -13px;
+   
+  }
+  
+  .product-card {
+    background-color: #404652;
+    border-radius: 10px;
+    padding: 10px;
+    overflow: hidden;
+    height: 330px;
+    text-align: left;
+  }
+  .product-card .linha {
+    height: 1px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-left: -10px;
+    flex-direction: column;
+  }
+
+  .product-card .imagemProduto {
+    margin-left: -6px;
+    width: 300px;
+    height: 260px;
+    border-radius: 5px;
+  }
+  
+  .product-name {
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+  }
+  .botoes{
+    display: block;
+  
+   }
+  
+
+  .card-screen::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;           
+  }
+  
+  .card-screen::-webkit-scrollbar-track {
+    background: none;       
+  }
+  
+  .card-screen::-webkit-scrollbar-thumb {
+    background-color: #404652    ;
+    height: 1px;
+    border-radius: 20px;      
+     
+  }
+
+ 
+
+  .categories img {
+    text-align: left;
+    height: 40px;
+    width: 30px; 
+    
+  }
+
+
+ #categorias{
+  height: 10px;
+ }
+
+ /*modal*/
+ 
+ .modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.4); /* Fundo escuro semi-transparente */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #888;
+  width: 30%; /* Largura reduzida para um retângulo vertical */
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imagemProdutoModal {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.imagemProdutoModal img {
+  max-width: 100%;
+  height: auto;
+  max-height: 200px; /* Limita a altura da imagem */
+}
+
+.modal-content input {
+  width: 100%; /* Ocupa toda a largura disponível */
+  margin-bottom: 15px; /* Espaço entre os inputs */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
 }
