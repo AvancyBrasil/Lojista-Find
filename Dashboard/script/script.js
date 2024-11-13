@@ -24,9 +24,12 @@ if (!email) {
                 return;
             }
 
-            // Preenche os campos de Nome da Empresa e Email
-            document.getElementById('empresa-name').textContent = lojista.nomeEmpresa || 'Nome da Empresa';
-            document.getElementById('email-user').textContent = lojista.email || 'email@gmail.com';
+            
+            document.getElementById('empresa-name').textContent = lojista.nomeEmpresa;
+            document.getElementById('email-user').textContent = lojista.email ;
+            document.getElementById('empresa-name-1').textContent = lojista.nomeEmpresa;
+            document.getElementById('email-user-1').textContent = lojista.email ;
+        
 
             console.log('Dados do lojista carregados:', lojista);
         })

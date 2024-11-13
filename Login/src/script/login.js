@@ -25,7 +25,7 @@ document.getElementById('formCadastro').addEventListener('submit', async functio
 
                 window.location.href = '../Dashboard/index.html';
             } else {
-                alert('Conta banida. Entre em contato com o suporte.');
+                alert('Conta banida. Entre em contato com o suporte. Neste email: avancynew@gmail.com');
             }
         } else {
             alert('E-mail ou senha incorretos.');
